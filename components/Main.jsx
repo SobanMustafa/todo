@@ -11,14 +11,14 @@ const Task = ({ title, description, deleteTask, index }) => {
 
 
 	return (
-		<div className="flex flex-col py-3 m-4 items-center font-semibold text-gray-500">
+		<div className="flex flex-col py-3 m-4 items-center text-gray-500">
 			<p>{title}</p>
 			<span>{description}</span>
 			<button
-				className="mt-6 py-3 bg-black text-white w-[50px] hover:bg-white hover:text-black border border-black"
+				className="mt-6 py-3 bg-black text-white w-[150px] hover:bg-white hover:text-black border border-black"
 				onClick={() => deleteTask(index)}
 			>
-				-
+				Delete Task
 			</button>
 		</div>
 	);
@@ -64,18 +64,18 @@ const Main = () => {
 						onChange={(e) => setTitle(e.target.value)}
 						type="text"
 						placeholder="Task Title"
-						className="border outline-none flex flex-col mt-6 py-2 w-[500px]"
+						className="border outline-none flex flex-col mt-6 py-2 md:w-[500px]"
 					/>
 					<input
 						value={description}
 						onChange={(e) => setDescription(e.target.value)}
 						type="text"
 						placeholder="Task Description"
-						className="border outline-none flex flex-col mt-6 py-2 w-[500px]"
+						className="border outline-none flex flex-col mt-6 py-2 md:w-[500px]"
 					/>
 					<button
 						type="submit"
-						className="mt-6 py-3 bg-black text-white w-[300px] hover:bg-white hover:text-black border border-black"
+						className="mt-6 py-3 bg-black text-white w-[150px] md:w-[150px] hover:bg-white hover:text-black border border-black"
 					>
 						Add
 					</button>
