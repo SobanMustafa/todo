@@ -53,7 +53,7 @@ const Main = () => {
 	}, [tasks]);
 
 	return (
-		<div className="bg-gray-100 m-auto w-[70%]">
+		<div className="bg-gray-200 m-auto w-[70%]">
 			<section>
 				<form
 					onSubmit={submitHandler}
